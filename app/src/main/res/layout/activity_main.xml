@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.dinuscxj.progressbar.CircleProgressBar
+            android:id="@+id/cpb_circlebar"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:progress_text_size="50sp"
+            app:style="solid_line"
+            app:progress_stroke_width="20dp"
+            app:progress_stroke_cap="round"
+            app:progress_background_color="#E4E4E4"
+            app:progress_start_color="#FF0000"
+            app:progress_end_color="#FF0000"
+            app:progress_text_color="#00FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Waiting\nfor bid"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="30dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
